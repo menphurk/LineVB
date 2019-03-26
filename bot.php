@@ -85,7 +85,8 @@ if(!is_null($events)){
 $textMessageBuilder = new TextMessageBuilder($textReplyMessage);
  
 //l ส่วนของคำสั่งตอบกลับข้อความ
-$response = $bot->replyMessage($replyToken,$textMessageBuilder);
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+$response = $bot->replyMessage('<reply token>', $textMessageBuilder);
 if ($response->isSucceeded()) {
     echo 'Succeeded!';
     return;
