@@ -71,8 +71,8 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "vb":
-                    $picFullSize = 'http://vb.redcross.or.th/wp-content/uploads/2017/02/vb-redcross-logo.png';
-                    $picThumbnail = 'http://vb.redcross.or.th/wp-content/uploads/2017/02/vb-redcross-logo.png';
+                    $picFullSize = 'https://vb.redcross.or.th/wp-content/uploads/2017/02/vb-redcross-logo.png';
+                    $picThumbnail = 'https://vb.redcross.or.th/wp-content/uploads/2017/02/vb-redcross-logo.png';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
                 case "vbc":
