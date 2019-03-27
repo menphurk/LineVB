@@ -70,19 +70,19 @@ if(!is_null($events)){
                     $textReplyMessage = "Bot ตอบกลับคุณเป็นข้อความ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
-                case "i":
-                    $picFullSize = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower';
-                    $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower/240';
+                case "vb":
+                    $picFullSize = 'http://vb.redcross.or.th/wp-content/uploads/2017/02/vb-redcross-logo.png';
+                    $picThumbnail = 'http://vb.redcross.or.th/wp-content/uploads/2017/02/vb-redcross-logo.png';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
-                case "v":
-                    $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/240';
-                    $videoUrl = "https://www.mywebsite.com/simplevideo.mp4";                
+                case "redcross":
+                    $picThumbnail = 'http://vb.redcross.or.th/wp-content/uploads/2017/01/ThaiRedCross-2.jpg';
+                    $videoUrl = "http://vb.redcross.or.th/wp-content/uploads/2017/01/ThaiRedCross-2.jpg";                
                     $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
                     break;
-                case "a":
-                    $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
-                    $replyData = new AudioMessageBuilder($audioUrl,27000);
+                case "vbc":
+                    $textReplyMessage = "1873 ถ.ราชดำริ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "l":
                     $placeName = "ที่ตั้งร้าน";
