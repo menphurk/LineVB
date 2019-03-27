@@ -75,27 +75,10 @@ if(!is_null($events)){
                     $picThumbnail = 'http://vb.redcross.or.th/wp-content/uploads/2017/02/vb-redcross-logo.png';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
-                case "redcross":
-                    $picThumbnail = 'http://vb.redcross.or.th/wp-content/uploads/2017/01/ThaiRedCross-2.jpg';
-                    $videoUrl = "http://vb.redcross.or.th/wp-content/uploads/2017/01/ThaiRedCross-2.jpg";                
-                    $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
-                    break;
                 case "vbc":
                     $textReplyMessage = "1873 ถ.ราชดำริ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330";
                     $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;
-                case "l":
-                    $placeName = "ที่ตั้งร้าน";
-                    $placeAddress = "แขวง พลับพลา เขต วังทองหลาง กรุงเทพมหานคร ประเทศไทย";
-                    $latitude = 13.780401863217657;
-                    $longitude = 100.61141967773438;
-                    $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
-                    break;
-                case "s":
-                    $stickerID = 22;
-                    $packageID = 2;
-                    $replyData = new StickerMessageBuilder($packageID,$stickerID);
-                    break;      
+                    break;     
                 case "im":
                     $imageMapUrl = 'https://www.mywebsite.com/imgsrc/photos/w/sampleimagemap';
                     $replyData = new ImagemapMessageBuilder(
