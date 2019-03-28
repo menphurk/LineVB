@@ -80,7 +80,7 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;     
                 case "im":
-                    $imageMapUrl = 'https://vb.redcross.or.th/wp-content/uploads/2017/02/vb-redcross-logo.png';
+                    $imageMapUrl = 'https://www.rcsbh.org/images/rcsbh-moduli/rcsbh-sta-radimo.jpg';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'This is Title',
